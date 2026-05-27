@@ -3,16 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site</title>
+    <!-- 📣 Título que aparece na ABA do navegador -->
+    <title>Blog Elétrico | Aprendendo e Praticando</title>
+    <!-- 🔗 Aqui ligamos o arquivo de ESTILO (CSS) -->
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
+    <!-- 🟩 TUDO o que aparece NA TELA do site, fica DENTRO do <body> -->
+
+    <!-- 🟦 <header> = Cabeçalho do site -->
     <header>
-        <h1 style="color: red;">Bem-vindo ao Meu Site</h1>
+        <h1>⚡ Blog Elétrico</h1> <!-- <h1> é o título principal, o maior -->
+        <p>Aprendendo tudo sobre instalações, circuitos e segurança elétrica</p> <!-- <p> é parágrafo de texto -->
     </header>
+
+    <!-- 🟦 <nav> = Menu de navegação -->
+    <nav>
+        <ul> <!-- <ul> é Lista sem ordem (bolinhas) -->
+            <li><a href="#sobre">Sobre Mim</a></li> <!-- <li> é item da lista -->
+            <li><a href="#registros">Registros de Trabalho</a></li>
+            <li><a href="#aprendizados">Meus Aprendizados</a></li>
+            <li><a href="#seguranca">Segurança</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- 🟦 <section> = São as seções / partes do conteúdo -->
     <main>
-        <p>Esta é a minha primeira página web!</p>
-        <p>Este é o primeiro parágrafo. Isso ae Thiagão!</p>
-        <img src="imagens/img_boy.jpg" width="500" alt="Imagem de um menino">
+        <section id="sobre" class="secao">
+            <h2>👨‍🔧 Sobre Mim</h2> <!-- <h2> é subtítulo -->
+            <p>Olá! Sou apaixonado por elétrica e estou aprendendo cada dia mais sobre essa área essencial. Aqui vou compartilhar tudo o que aprendo, desde conceitos básicos até montagem de quadros e circuitos completos. Meu objetivo é guardar meu conhecimento e ajudar outras pessoas que também estão começando!</p>
+        </section>
+
+        <section id="aprendizados" class="secao">
+            <h2>📚 O que já aprendi</h2>
+            
+            <!-- 🟦 <div class="cartao"> = Caixinhas para organizar conteúdo -->
+            <div class="cartao">
+                <h3>🔌 Componentes Básicos</h3>
+                <p>Conheço os tipos de fios, cabos, disjuntores, tomadas e interruptores. Entendo para que serve cada um e como escolher o modelo certo para cada uso.</p>
+            </div>
+
+            <div class="cartao">
+                <h3>📐 Montagem de Quadros de Distribuição</h3>
+                <p>Aprendi como organizar os disjuntores, fazer a distribuição de circuitos, ligação de barramentos e importância da ordem e limpeza na instalação.</p>
+            </div>
+
+            <div class="cartao">
+                <h3>🔢 Cálculos Simples</h3>
+                <p>Noções básicas de corrente, tensão, potência e dimensionamento de fios, sempre seguindo as normas técnicas.</p>
+            </div>
+        </section>
+
+        <section id="seguranca" class="secao">
+            <h2>🛡️ Segurança em Primeiro Lugar</h2>
+            <p>Na elétrica, segurança não é opção, é regra! Algumas coisas que aprendi:</p>
+            <ul>
+                <li>Sempre desligar a chave geral antes de mexer em qualquer instalação</li>
+                <li>Usar EPIs adequados: luvas, óculos, calçado isolante</li>
+                <li>Respeitar todas as normas técnicas (NBR 5410)</li>
+                <li>Nunca fazer gambiarras ou ligações improvisadas</li>
+            </ul>
+        </section>
+        <!-- SEÇÃO: REGISTROS DE TRABALHO -->
+<section id="registros" class="secao">
+    <h2>📋 Registros de Trabalho</h2>
+    <p>Aqui anoto todos os serviços que executo, detalhes, materiais usados e o que aprendi em cada um.</p>
+
+    <!-- 📄 REGISTRO 1 - EXEMPLO -->
+    <div class="cartao-registro">
+        <h3>🔌 Instalação de Tomadas e Iluminação - Residencial</h3>
+        <span class="data">📅 Data: 15/05/2026 | 📍 Local: Residencial</span>
+        
+        <div class="galeria-fotos">
+            <!-- 🖼️ COLOQUE SUAS FOTOS AQUI -->
+            <img src="foto1.jpg" alt="Fiação embutida na parede">
+            <img src="foto2.jpg" alt="Caixa de passagem instalada">
+            <img src="foto3.jpg" alt="Tomadas e interruptores finalizados">
+        </div>
+
+        <div class="detalhes">
+            <h4>📝 O que foi feito:</h4>
+            <p>Instalação de 4 pontos de tomada 10A/250V e 3 pontos de iluminação em quarto e sala. Passagem de eletrodutos embutidos, dimensionamento dos fios conforme norma NBR 5410 (fio 2,5mm² para tomadas e 1,5mm² para iluminação). Montagem de caixas 4x2 e ligação correta de fase, neutro e terra.</p>
+
+            <h4>🧰 Materiais utilizados:</h4>
+            <ul>
+                <li>Fio flexível 2,5mm² e 1,5mm² ( cores diferenciadas )</li>
+                <li>Eletroduto corrugado 3/4"</li>
+                <li>Caixas de passagem 4x2"</li>
+                <li>Tomadas e interruptores de sobrepor/embutir</li>
+                <li>Terminais e fita isolante de alta qualidade</li>
+            </ul>
+
+            <h4>💡 Observação/Aprendizado:</h4>
+            <p>Cuidado especial na hora de passar os fios para não romper a isolação. Sempre testar continuidade e tensão antes de entregar o serviço ao cliente. Organização dos fios dentro da caixa facilita futuras manutenções.</p>
+        </div>
+    </div>
+
+    <!-- 📄 REGISTRO 2 - VOCÊ PODE COPIAR ESSA PARTE PARA CADA NOVO SERVIÇO -->
+    <div class="cartao-registro">
+        <h3>⚡ Manutenção no Quadro de Comando da Refrigeração Comercial</h3>
+        <span class="data">📅 Data: 22/05/2026 | 📍 Local: Comercial</span>
+        
+        <div class="galeria-fotos">
+            <img src="painel_refrigeracao.jpg" alt="Estrutura do quadro">
+            <img src="controlador2.jpg" alt="monitor de tensão">
+            <img src="controlador.jpg" alt="esquema de ligação do controlador">
+            <img src="painel_refrigeracao2.jpg" alt="Quadros de comando">
+            <img src="quadro_de_comando.jpg" alt="tecnico fazendo manutenção">
+        </div>
+
+        <div class="detalhes">
+            <h4>📝 O que foi feito:</h4>
+            <p>Montagem e instalação de quadro de distribuição com 8 disjuntores. Distribuição dos circuitos: iluminação, tomadas gerais, chuveiro e ar-condicionado. Ligação dos barramentos de fase, neutro e terra. Identificação de cada circuito para facilitar o uso.</p>
+
+            <h4>🧰 Materiais utilizados:</h4>
+            <ul>
+                <li>Quadro de distribuição de embutir</li>
+                <li>Disjuntores termomagnéticos (diferentes amperagens)</li>
+                <li>Barramentos de cobre e terminais</li>
+                <li>Trilhos DIN e acessórios de fixação</li>
+            </ul>
+
+            <h4>💡 Observação/Aprendizado:</h4>
+            <p>Importante respeitar a ordem dos disjuntores e o dimensionamento correto para não sobrecarregar os circuitos. A identificação clara é fundamental para segurança e agilidade na hora de desligar algo.</p>
+        </div>
+    </div>
+
+</section>
     </main>
+
+    <!-- 🟦 <footer> = Rodapé do site -->
+    <footer>
+        <p>© 2026 Blog Elétrico | Feito com muita energia ⚡ e estudo!</p>
+    </footer>
+
+    <!-- 🔗 Aqui ligamos o arquivo de AÇÃO (JavaScript) -->
+    <script src="script.js"></script>
 </body>
 </html>

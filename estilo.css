@@ -1,0 +1,191 @@
+/* 📝 Isso é um comentário, o computador ignora o que está escrito aqui */
+
+/* 🎯 Aqui estamos definindo as CORES PRINCIPAIS que vamos usar (tema de elétrica) */
+:root {
+    --cor-primaria: #f9a825; /* Amarelo/laranja - cor de energia */
+    --cor-secundaria: #1976d2; /* Azul - confiança/segurança */
+    --cor-escura: #212121; /* Preto/cinza escuro */
+    --cor-clara: #f5f5f5; /* Fundo claro */
+    --cor-texto: #333;
+}
+
+/* 🎯 Reset básico: tira margens padrão e define fonte */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: var(--cor-clara); /* Cor de fundo da página */
+    color: var(--cor-texto); /* Cor da letra */
+    line-height: 1.6; /* Espaçamento entre linhas de texto */
+}
+
+/* 🎯 Estilo do CABEÇALHO */
+header {
+    background: linear-gradient(135deg, var(--cor-primaria), #f57c00); /* Cor com degradê */
+    color: white; /* Letra branca */
+    padding: 2rem; /* Espaçamento interno */
+    text-align: center; /* Texto centralizado */
+}
+
+header h1 {
+    font-size: 2.5rem; /* Tamanho da letra */
+    margin-bottom: 0.5rem;
+}
+
+/* 🎯 Estilo do MENU */
+nav {
+    background-color: var(--cor-escura); /* Fundo preto/cinza */
+    position: sticky; /* Menu fica preso no topo ao rolar a página */
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none; /* Tira as bolinhas da lista */
+    display: flex; /* Deixa os itens um do lado do outro */
+    justify-content: center; /* Centraliza o menu */
+    flex-wrap: wrap; /* Quebra linha se tela for pequena (celular) */
+}
+
+nav a {
+    color: white; /* Letra branca */
+    text-decoration: none; /* Tira o sublinhado do link */
+    padding: 1rem 1.5rem; /* Espaçamento interno nos itens do menu */
+    display: block;
+    transition: background 0.3s; /* Efeito suave ao passar o mouse */
+}
+
+/* 🎯 Efeito ao passar o mouse no menu */
+nav a:hover {
+    background-color: var(--cor-secundaria); /* Fica azul */
+}
+
+/* 🎯 Estilo das SEÇÕES */
+.secao {
+    max-width: 1000px; /* Largura máxima para não ficar muito largo */
+    margin: 2rem auto; /* Centraliza a seção na tela */
+    padding: 0 1.5rem;
+}
+
+.secao h2 {
+    color: var(--cor-secundaria); /* Título azul */
+    margin-bottom: 1.2rem;
+    border-bottom: 2px solid var(--cor-primaria); /* Linha amarela embaixo */
+    padding-bottom: 0.3rem;
+}
+
+/* 🎯 Estilo dos CARTÕES (caixinhas) */
+.cartao {
+    background-color: white; /* Fundo branco */
+    padding: 1.5rem; /* Espaçamento interno */
+    margin-bottom: 1.5rem; /* Espaçamento entre cartões */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Sombra suave */
+    border-left: 5px solid var(--cor-primaria); /* Barrinha amarela na esquerda */
+}
+
+.cartao h3 {
+    color: var(--cor-escura);
+    margin-bottom: 0.8rem;
+}
+
+/* 🎯 Estilo do RODAPÉ */
+footer {
+    background-color: var(--cor-escura);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+/* 📱 Deixa o site bonito também no CELULAR */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column; /* Menu fica um abaixo do outro */
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+}
+
+/* 🎨 ESTILOS PARA A PARTE DE REGISTROS DE TRABALHO */
+
+/* Cartão maior para os registros */
+.cartao-registro {
+    background-color: white;
+    padding: 1.8rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+    border-left: 5px solid var(--cor-secundaria); /* Barrinha azul para diferenciar */
+}
+
+.cartao-registro h3 {
+    color: var(--cor-escura);
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.data {
+    display: inline-block;
+    background-color: #e3f2fd;
+    color: var(--cor-secundaria);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-bottom: 1.2rem;
+}
+
+/* Área das fotos */
+.galeria-fotos {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 1rem 0 1.5rem 0;
+}
+
+.galeria-fotos img {
+    width: 180px;
+    height: 130px;
+    object-fit: cover; /* Ajusta a imagem sem distorcer */
+    border-radius: 6px;
+    border: 2px solid #eee;
+    transition: transform 0.3s;
+}
+
+.galeria-fotos img:hover {
+    transform: scale(1.05); /* Efeito de "aumentar" ao passar o mouse */
+    border-color: var(--cor-primaria);
+}
+
+/* Área dos detalhes/texto */
+.detalhes h4 {
+    color: var(--cor-primaria);
+    margin: 1rem 0 0.5rem 0;
+    font-size: 1rem;
+}
+
+.detalhes ul {
+    margin-left: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.detalhes p, .detalhes li {
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+/* 📱 Ajuste para celular: fotos ficam maiores */
+@media (max-width: 600px) {
+    .galeria-fotos img {
+        width: 100%;
+        height: auto;
+    }
+}
